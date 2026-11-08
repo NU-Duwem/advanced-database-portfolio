@@ -41,7 +41,7 @@ The database has nine tables.
 - Each product has one inventory record (1:1); `inventory.product_id` is `UNIQUE`.
 - `expenses` and `stock_audit` stand alone: expenses are used for profit reporting and the audit table is filled by a trigger.
 
-ER diagram : ![ER diagram](evidence/p1_er_diagram.png) 
+ER diagram : ![ER diagram](Nwapi_Duwem_301925157_evidence/p1_er_diagram.png) 
 
 ## Changes made to the original schema
 
@@ -85,26 +85,26 @@ The seed script generates [about] 60 products, 5,000 customers, 200,000 orders, 
 
 ## Evidence
 
-![Figure 1](evidence/p1_tables_list.png)
+![Figure 1](Nwapi_Duwem_301925157_evidence/p1_tables_list.png)
 *Figure 1: The nine tables created in the Lilies Pastries database.*
 
-![Figure 2](evidence/p1_constraints_list.png)
+![Figure 2](Nwapi_Duwem_301925157_evidence/p1_constraints_list.png)
 *Figure 2: Constraints defined on the schema: primary keys, foreign keys, unique and check constraints.*
 
-![Figure 3](evidence/p1_check_status_violation.png)
+![Figure 3](Nwapi_Duwem_301925157_evidence/p1_check_status_violation.png)
 *Figure 3: An insert with an invalid order status is rejected by the status check constraint.*
 
-![Figure 4](evidence/p1_check_price_violation.png)
+![Figure 4](Nwapi_Duwem_301925157_evidence/p1_check_price_violation.png)
 *Figure 4: A product with a negative price is rejected by the price check constraint.*
 
-![Figure 5](evidence/p1_foreign_key_violation.png)
+![Figure 5](Nwapi_Duwem_301925157_evidence/p1_foreign_key_violation.png)
 *Figure 5: A payment for an order that does not exist is rejected by the foreign key.*
 
-![Figure 6](evidence/p1_stock_audit_trigger.png)
+![Figure 6](Nwapi_Duwem_301925157_evidence/p1_stock_audit_trigger.png)
 *Figure 6: Updating inventory fires the trigger, which records the old and new quantity in `stock_audit`.*
 
-![Figure 7](evidence/p1_seed_row_counts.png)
+![Figure 7](Nwapi_Duwem_301925157_evidence/p1_seed_row_counts.png)
 *Figure 7: Row counts after running the seed script.*
 
-![ER diagram](evidence/p1_er_diagram.png)
+![ER diagram](Nwapi_Duwem_301925157_evidence/p1_er_diagram.png)
 *Figure 8: Entity-relationship diagram of the Lilies Pastries database. A bar means one, a crow's foot means many, and a circle means optional.*

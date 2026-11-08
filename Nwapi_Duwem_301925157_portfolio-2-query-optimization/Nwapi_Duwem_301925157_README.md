@@ -72,22 +72,22 @@ Baseline plans (before any extra index):
 ![Q1 before](evidence/p2_01-before-customer-orders.png)
 *Q1 baseline: a parallel sequential scan of `orders` discards most rows to find one customer's orders.*
 
-![Q2 before](evidence/p2_02-before-monthly-revenue.png)
+![Q2 before](Nwapi_Duwem_301925157_evidence/p2_02-before-monthly-revenue.png)
 *Q2 baseline: a sequential scan and aggregation over a large share of `orders`.*
 
-![Q3 before](evidence/p2_03-before-top-products.png)
+![Q3 before](Nwapi_Duwem_301925157_evidence/p2_03-before-top-products.png)
 *Q3 baseline: sequential scans on `order_items` and `orders` feeding hash joins.*
 
-![Q4 before](evidence/p2_04-before-payment-lookup.png)
+![Q4 before](Nwapi_Duwem_301925157_evidence/p2_04-before-payment-lookup.png)
 *Q4 baseline: a sequential scan of `payments` to find one order's payment.*
 
-![Q5 before](evidence/p2_05-before-products-units.png)
+![Q5 before](Nwapi_Duwem_301925157_evidence/p2_05-before-products-units.png)
 *Q5 baseline: a parallel sequential scan of `order_items` to total one product's units.*
 
-![Q6 before](evidence/p2_06-before-customer-ranking.png)
+![Q6 before](Nwapi_Duwem_301925157_evidence/p2_06-before-customer-ranking.png)
 *Q6 baseline: a sequential scan, sort and window step over completed orders.*
 
 After optimisation:
 
-![Q1 after](evidence/after_customer_orders.png)
+![Q1 after](Nwapi_Duwem_301925157_evidence/after_customer_orders.png)
 *Q1 after the composite index: an index scan returns the customer's latest orders already sorted.*
