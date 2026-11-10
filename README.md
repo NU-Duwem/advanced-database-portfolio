@@ -44,7 +44,7 @@ All data is synthetic, produced by the seed script with a fixed random seed, so 
 
 - **Tool used:** Claude (Anthropic).
 - **What it was used for:** guidance on the portfolio structure and concepts, and example SQL, Python and MongoDB code and documentation drafts, which I adapted to my own case study and database.
-- **My own work:** I chose Lilies Pastries as the case study and started from my own PostgreSQL schema, which I reviewed and improved. I installed and configured PostgreSQL and MongoDB, ran every script myself, diagnosed and fixed the errors that came up, took all screenshots and execution plans from my own machine, and decided what to include in each portfolio. [Add anything else that is true: for example, the explanations, analysis and reflection are written in my own words.]
+- **My own work:** I chose Lilies Pastries as the case study and started from my own PostgreSQL schema, which I reviewed and improved. I installed and configured PostgreSQL and MongoDB, ran every script myself, diagnosed and fixed the errors that came up, took all screenshots and execution plans from my own machine, and decided what to include in each portfolio.
 - **How I verified it:** I tested each script against my own database, checked results against what I expected (row counts, constraint errors, execution plan changes), and kept only what I could run and explain.
 
 I remain responsible for understanding and being able to explain everything submitted.
